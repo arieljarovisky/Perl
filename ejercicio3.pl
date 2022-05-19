@@ -28,18 +28,6 @@ if ($response->is_success) {
                  
        }
    }
-}   
-
-
-
-
-
-
-    #print "$_->{temp}\n" for @{$deserialized->{content}};
-    #$clima = decode_json $clima;
-    # my @array = %$clima;
-    #print  @array;
-
-else {
+}else {
     die $response->status_line;
 }
